@@ -2,6 +2,9 @@
 
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*YpjmY2thJ-Oes_T1al5FhA.jpeg)
 
+### ER Diagram:-
+![ER_Diagram](https://github.com/parthpatoliya97/zomato_sales_analysis_SQL/blob/main/ER-Diagram.png?raw=true)
+
 #### Concepts that are learned from this project :-
 - Database creation and Table Design 
 - Data Retrieval and Filtering
