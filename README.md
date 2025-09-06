@@ -2,9 +2,6 @@
 
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*YpjmY2thJ-Oes_T1al5FhA.jpeg)
 
-### ER Diagram:-
-![ER_Diagram](https://github.com/parthpatoliya97/zomato_sales_analysis_SQL/blob/main/ER-Diagram.png?raw=true)
-
 #### Concepts that are learned from this project :-
 - Database creation and Table Design 
 - Data Retrieval and Filtering
@@ -20,6 +17,65 @@
 - Order and Sales Analysis 
 - Restaurant Performance
 - Rider Efficiency
+
+### ER Diagram:-
+![ER_Diagram](https://github.com/parthpatoliya97/zomato_sales_analysis_SQL/blob/main/ER-Diagram.png?raw=true)
+
+#### Table: customers
+
+- customer_id: A unique identifier for each customer. (Crucial for linking orders to a specific person)
+
+- customer_name: The full name of the customer. (Essential for identification and communication)
+
+- reg_date: The date the customer signed up. (Important for tracking user growth and calculating customer lifetime value)
+
+Table: restaurants
+
+- restaurant_id: A unique identifier for each restaurant. (Crucial for linking orders and knowing where food is from)
+
+- restaurant_name: The name of the restaurant. (Essential for display and selection by customers)
+
+- city: The location of the restaurant. (Vital for determining availability based on customer's delivery address)
+
+- opening_time / closing_time: The daily operating hours. (Critical for defining when orders can be placed)
+
+- total_opening_hours: The pre-calculated number of hours open. (Important for analytics and reporting on restaurant performance)
+
+#### Table: riders
+
+- rider_id: A unique identifier for each rider. (Essential for assigning and tracking deliveries)
+
+- rider_name: The full name of the rider. (Needed for management and support purposes)
+
+- signup_date: The date the rider joined the platform. (Important for analytics on rider retention and growth)
+
+#### Table: orders
+
+- order_id: A unique identifier for each order. (The most important key for tracking an order's entire lifecycle)
+
+- customer_id: Links to the customer who placed the order. (Essential for customer history and personalization)
+
+- restaurant_id: Links to the restaurant fulfilling the order. (Key for restaurant sales reports)
+
+- order_item: A description of what was ordered. (The fundamental detail of the transaction)
+
+- order_date / order_time: The timestamp of when the order was placed. (Vital for sales trends, reporting, and operational analysis)
+
+- order_status: The current state of the order (e.g., preparing, cancelled). (Critical for real-time tracking and workflow management)
+
+- total_amount: The monetary value of the order. (Fundamental for financial reporting and revenue calculation)
+
+#### Table: delivery
+
+- delivery_id: A unique identifier for each delivery event. (Important for tracking individual delivery performance)
+
+- order_id: Links to the specific order being delivered. (Creates the connection between the sale and its fulfillment)
+
+- delivery_status: The current state of the delivery (e.g., dispatched, delivered). (Crucial for real-time customer tracking and rider management)
+
+- delivery_time: The timestamp of the delivery status update. (Key for measuring delivery speed and rider performance metrics)
+
+- rider_id: Links to the rider assigned to the delivery. (Essential for assigning work and calculating rider pay/scores)
 
 #### 1.Top 5 Most Frequently Ordered Dishes (by a Specific Customer in Last 1 Year)
 
