@@ -28,8 +28,9 @@
 - customer_name: The full name of the customer. (Essential for identification and communication)
 
 - reg_date: The date the customer signed up. (Important for tracking user growth and calculating customer lifetime value)
+-------------------------------------------------------------------------------------------------------------------------------------
 
-Table: restaurants
+#### Table: restaurants
 
 - restaurant_id: A unique identifier for each restaurant. (Crucial for linking orders and knowing where food is from)
 
@@ -40,6 +41,7 @@ Table: restaurants
 - opening_time / closing_time: The daily operating hours. (Critical for defining when orders can be placed)
 
 - total_opening_hours: The pre-calculated number of hours open. (Important for analytics and reporting on restaurant performance)
+---------------------------------------------------------------------------------------------------------------------------------------
 
 #### Table: riders
 
@@ -48,6 +50,7 @@ Table: restaurants
 - rider_name: The full name of the rider. (Needed for management and support purposes)
 
 - signup_date: The date the rider joined the platform. (Important for analytics on rider retention and growth)
+--------------------------------------------------------------------------------------------------------------------------------------
 
 #### Table: orders
 
@@ -64,6 +67,7 @@ Table: restaurants
 - order_status: The current state of the order (e.g., preparing, cancelled). (Critical for real-time tracking and workflow management)
 
 - total_amount: The monetary value of the order. (Fundamental for financial reporting and revenue calculation)
+-------------------------------------------------------------------------------------------------------------------------------------------
 
 #### Table: delivery
 
@@ -76,6 +80,7 @@ Table: restaurants
 - delivery_time: The timestamp of the delivery status update. (Key for measuring delivery speed and rider performance metrics)
 
 - rider_id: Links to the rider assigned to the delivery. (Essential for assigning work and calculating rider pay/scores)
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 #### 1.Top 5 Most Frequently Ordered Dishes (by a Specific Customer in Last 1 Year)
 
